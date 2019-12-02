@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome to Community crisis centers</h2>
+<div class="row">
+    <div class="col-lg-8">
+        <div class="panel panel-success">
+            <div class="panel-heading">User Consumer</div>
+            <div class="panel-body">
+                <form class="form-inline" action="/action_page.php">
+                    <label for="email">Phone Number:</label>
+                    <input class="form-control" placeholder="Enter Phone Number" id="email">
+                    <a asp-area="" asp-controller="Home" asp-action="ProfileUpdate" class="btn btn-primary">Submit</a>
+                    @*<button type="submit" class="btn btn-primary">Submit</button>*@
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="alert alert-warning">
+            <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        </div>
+    </div>
+</div>
+
+
