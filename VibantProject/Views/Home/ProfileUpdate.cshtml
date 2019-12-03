@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Welcome";
 }
 
@@ -55,17 +54,74 @@
                     <div class="form-group">
                         <div class="col-lg-12">
                             <label>Caller Crisis</label>
-                            <textarea type="email" class="form-control" placeholder="Caller Crisis" />
-                        </div>
-                        <div class="col-lg-6">
-                            <label>Additional Phones</label>
-                            <input class="form-control" placeholder="Additional Phones">
+                            <textarea class="form-control" placeholder="Caller Crisis" rows="3"></textarea>
                         </div>
                     </div>
-                    <div class="form-group form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox"> Required further Contact
-                        </label>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <label>Counselor Notes</label>
+                            <textarea class="form-control" placeholder="Counselor Notes" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <a href="#demo" data-toggle="collapse" class="btn btn-primary">Additional Supporters</a>
+
+                            <div id="demo" class="collapse">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4">First Name</label>
+                                        <input class="form-control" id="inputEmail4" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4">Last Name</label>
+                                        <input class="form-control" id="inputPassword4" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4">Phone Number</label>
+                                        <input class="form-control" id="inputEmail4" placeholder="Phone Number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4"></label>
+                                        <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                            <label>Action Plan</label>
+                            <textarea class="form-control" placeholder="Counselor Notes" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-4">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Required Follow Update
+                                <select class="form-control" id="sel1">
+                                    <option>Phone</option>
+                                    <option>Email</option>
+                                    <option>Text Message</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Time Elapsed</label>
+                            <input class="form-control" id="inputEmail4" placeholder="Time Elapsed">
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Time Period</label>
+                            <select class="form-control" id="sel1">
+                                <option>Day(s)</option>
+                                <option>Week(s)</option>
+                                <option>Month(s)</option>
+                                <option>Year(s)</option>
+                            </select>
+                        </div>
                     </div>
                     <a asp-area="" asp-controller="Home" asp-action="ProfileUpdate" class="btn btn-primary">Submit</a>
                     @*<button type="submit" class="btn btn-primary">Submit</button>*@
@@ -74,10 +130,14 @@
         </div>
     </div>
     <div class="col-lg-4">
-        <div class="alert alert-warning">
-            <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+        <div class="alert alert-danger">
+            <strong>Phone Call Recall</strong>
+            <ul class="list-group">
+                 <li class="list-group-item"><a asp-area="" asp-controller="Home" asp-action="ProfileUpdate">124-789-7523</a></li>
+                 <li class="list-group-item"><a asp-area="" asp-controller="Home" asp-action="ProfileUpdate">676-676-7523</a></li>
+                 <li class="list-group-item"><a asp-area="" asp-controller="Home" asp-action="ProfileUpdate">345-789-5657</a></li>
+            </ul>
         </div>
     </div>
 </div>
-
 
